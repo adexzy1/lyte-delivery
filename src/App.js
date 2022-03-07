@@ -38,7 +38,7 @@ function App() {
 
         {/* private Route */}
         <Route element={<RequireAuth />}>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard user={user} />} />
         </Route>
       </Routes>
 
