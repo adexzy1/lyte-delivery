@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--text-font);
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #41b0cd;
+  --white-color: #fff;
+  --text-color: #07294a;
+  --secondary-text-color: #455964;
+  --secondary-color: #ededed;
+  --text-font: 'Montserrat', sans-serif;
+  --header-font: 'PT Sans', sans-serif;
+}

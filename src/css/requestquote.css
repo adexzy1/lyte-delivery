@@ -1,0 +1,27 @@
+.quote-container {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+}
+.left-quote h3 {
+  font-size: 1.5rem;
+  font-family: var(--header-font);
+  padding-bottom: 1rem;
+}
+.left-quote p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+.left-quote button {
+  margin-top: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.quote-img {
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,109 @@
+.hero-section_container {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+.hero-img_container {
+  width: 100%;
+  padding: 1rem;
+}
+.hero-img_container img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+.hero-text_container {
+  padding: 0 1rem;
+}
+.hero-text_container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  line-height: 2.5rem;
+  font-family: var(--header-font);
+  margin-top: 1.5rem;
+}
+.hero-text_container p {
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 0.93rem;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+}
+
+.hero-text_container button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1.5rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 2rem;
+  color: var(--white-color);
+}
+
+.stats-section {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.stats-section p {
+  color: initial;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 0.4rem;
+  color: var(--text-color);
+}
+.stats-section span {
+  font-size: 0.7rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  .hero-section_container {
+    flex-direction: row-reverse;
+    padding: 3rem 1rem;
+    background-color: var(--secondary-color);
+  }
+
+  .hero-img_container {
+    display: flex;
+  }
+  .hero-img_container img {
+    width: 25rem;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-img_container img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  /* .hero-text_container {
+    flex: 1;
+  }
+  .hero-img_container {
+    flex: 1;
+  } */
+  .hero-text_container h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-right: 3rem;
+  }
+  .hero-text_container p {
+    padding-right: 7rem;
+  }
+  .stats-section {
+    justify-content: initial;
+  }
+  .stats-section p {
+    padding-right: 0;
+  }
+}
