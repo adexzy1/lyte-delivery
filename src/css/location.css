@@ -1,0 +1,43 @@
+.locations-container {
+  padding: 1rem;
+  padding-top: 7rem;
+}
+.locations-container p {
+  padding: 1rem 0.5rem;
+  background-color: var(--primary-color);
+  margin: 1rem 0;
+  width: 60%;
+  color: var(--white-color);
+  border-radius: 5px;
+}
+.search-box {
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+  margin-bottom: 4rem;
+}
+.search-box input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--primary-color);
+  padding: 0 1rem;
+  outline: none;
+  border-radius: 5px;
+}
+.search-box svg {
+  position: absolute;
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.spinner img {
+  width: 5rem;
+}

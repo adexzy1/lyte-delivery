@@ -1,7 +1,14 @@
 import calculator from '../img/Calculator.svg';
+import CalculateQuote from './CalculateQuote';
+import { useState } from 'react';
 import '../css/requestquote.css';
 
 const RequestQuote = () => {
+  const [showCalc, setShowCalc] = useState(false);
+
+  const Calc = () => {
+    setShowCalc(!showCalc);
+  };
   return (
     <section className="quote-container" id="calculator">
       <section className="left-quote">
@@ -11,11 +18,19 @@ const RequestQuote = () => {
           the list of the locations we deliver.
         </p>
 
-        <button>Calculate price</button>
+        {showCalc === false && <button onClick={Calc}>Get Quote</button>}
       </section>
 
-      <section className="quote-img">
-        <img src={calculator} alt="calculator" />
+      <section>
+        {showCalc === true ? (
+          <section className="calc-quote">
+            <CalculateQuote calc={Calc} />
+          </section>
+        ) : (
+          <section className="quote-img">
+            <img src={calculator} alt="calculator" />
+          </section>
+        )}
       </section>
     </section>
   );

@@ -53,7 +53,7 @@ const NavBar = () => {
             <a href="#support">Support</a>
           </li>
           <li className="nav-links">
-            <a href="#locations">Locations</a>
+            <a href="/locations">Locations</a>
           </li>
 
           {user ? (

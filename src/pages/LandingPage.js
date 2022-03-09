@@ -1,19 +1,23 @@
-import React from 'react';
 import HeroSection from '../components/HeroSection';
 import RequestQuote from '../components/RequestQuote';
 import Reviews from '../components/Reviews';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
+import '../App.css';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
+      <NavBar />
       <HeroSection />
       <Services />
       <RequestQuote />
       <WhyChooseUs />
       <Reviews />
-    </div>
+      <Footer />
+    </>
   );
 };
 

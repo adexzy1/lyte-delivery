@@ -5,7 +5,7 @@ const Slide = ({ review }) => {
     <section className="slide">
       <section className="slide-content">
         <h5>{review.tag}</h5>
-        <p>{review.content}</p>
+        <p>{review.comment}</p>
         <section className="rating">
           <div>
             {review.rating.map((item, i) => (

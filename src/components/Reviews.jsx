@@ -2,12 +2,37 @@ import reveiwsImg from '../img/reviews-img.svg';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 import Slider from '../components/Reviewslider';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/reviews.css';
-import reviews from './reviewdata';
+import { getDocs, collection } from 'firebase/firestore';
+import { db } from '../config/firebase-config';
 
 const Reviews = () => {
+  const [reviews, setReviews] = useState([]);
   const [slideIndex, setSlideIndex] = useState(reviews.length - 1);
+
+  useEffect(() => {
+    const colRef = collection(db, 'reviews');
+
+    const getReviews = async () => {
+      try {
+        const response = await getDocs(colRef);
+
+        let reviewData = [];
+
+        response.docs.forEach((items) => {
+          reviewData.push({ ...items.data(), id: items.id });
+        });
+
+        setReviews(reviewData);
+        setSlideIndex(reviewData.length - 1);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    getReviews();
+  }, []);
 
   const changeSlide = (direction) => {
     if (direction === 'next') {
@@ -44,7 +69,7 @@ const Reviews = () => {
         </section>
 
         <section className="slider-section">
-          <Slider slideIndex={slideIndex} />
+          <Slider slideIndex={slideIndex} reviews={reviews} />
         </section>
       </section>
     </section>

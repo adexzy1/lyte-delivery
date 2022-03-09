@@ -1,8 +1,7 @@
-import reviews from './reviewdata';
 import Slide from './ReviewCard';
+import spinner from '../img/spinner.svg';
 
-const Slider = ({ slideIndex }) => {
-  console.log(slideIndex);
+const Slider = ({ slideIndex, reviews }) => {
   const style = {
     display: 'grid',
     gridTemplateColumns: `repeat(${reviews.length},100%)`,
@@ -12,10 +11,20 @@ const Slider = ({ slideIndex }) => {
   };
 
   return (
-    <section className="wrapper" style={style}>
-      {reviews.map((review, index) => (
-        <Slide review={review} key={index} />
-      ))}
+    <section>
+      {reviews.length === 0 && (
+        <section className="spinner">
+          <img src={spinner} alt="loading" />
+        </section>
+      )}
+
+      {reviews.length !== 0 && (
+        <section className="wrapper" style={style}>
+          {reviews.map((review, index) => (
+            <Slide review={review} key={index} />
+          ))}
+        </section>
+      )}
     </section>
   );
 };

@@ -4,15 +4,20 @@
   padding: 3rem 1rem;
   margin: 2rem 0;
 }
+
 .left-quote h3 {
   font-size: 1.5rem;
   font-family: var(--header-font);
   padding-bottom: 1rem;
+  color: var(--text-color);
 }
+
 .left-quote p {
   color: var(--secondary-color);
   font-size: 0.9rem;
+  line-height: 1.5rem;
 }
+
 .left-quote button {
   margin-top: 2rem;
   background-color: var(--secondary-color);
@@ -21,7 +26,81 @@
   text-transform: uppercase;
   padding: 1.5rem 2rem;
   border-radius: 10px;
+  width: 50%;
 }
+
 .quote-img {
   margin-top: 2.5rem;
+}
+
+/* calculate-quote section */
+
+.calculate-quote {
+  padding-top: 2rem;
+}
+
+.calculate-quote p {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  color: var(--secondary-color);
+}
+
+.calculate-quote select {
+  height: 3rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--white-color);
+  padding: 0 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.pick-up-location,
+.drop-off-location {
+  padding-bottom: 1.5rem;
+}
+
+#total {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--header-font);
+}
+#total p {
+  color: var(--text-color);
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.calculate-quote button {
+  padding: 1rem;
+  width: 50%;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.close-calc {
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+
+.disclaimer {
+  display: block;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
 }
