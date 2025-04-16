@@ -19,16 +19,16 @@ const HeroSection = () => {
 
         <section className="stats-section">
           <div className="stats">
-            <p>20,000+</p>
-            <span>Items Delivered</span>
+            <p>2M+</p>
+            <span>Cakes Delivered</span>
           </div>
           <div className="stats">
-            <p>60+</p>
-            <span>SME’s</span>
+            <p>5K+</p>
+            <span>Bakers Served</span>
           </div>
           <div className="stats">
-            <p> 99.9%</p>
-            <span>Successful Deliveries</span>
+            <p>8 Years</p>
+            <span>In Business</span>
           </div>
         </section>
       </section>

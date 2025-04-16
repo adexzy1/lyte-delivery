@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13302a58.css",
+    "main.js": "/static/js/main.c799ed5e.js",
+    "static/media/reviews-img.svg": "/static/media/reviews-img.6667abd0f77b7f3afde4f0f8d0061297.svg",
+    "static/media/lyte-logo.png": "/static/media/lyte-logo.7ba2a954e15264be557f.png",
+    "static/media/hero-img.png": "/static/media/hero-img.dc1aab610d988ebc2e14.png",
+    "static/media/rest.png": "/static/media/rest.279cf8682ad25b89009c.png",
+    "static/media/Calculator.svg": "/static/media/Calculator.8e7faaebb0d04c864a1a7ae3139bd5da.svg",
+    "static/media/avatar.png": "/static/media/avatar.b55f3d8cf7bf855a6ce1.png",
+    "static/media/service-delivery.svg": "/static/media/service-delivery.b3764a8d2b7f1e04e9edcfe474a2e84c.svg",
+    "static/media/logo.png": "/static/media/logo.3ec2c3aeccec63f6711f.png",
+    "static/media/flower.png": "/static/media/flower.fe1f35c309a1d26ac788.png",
+    "static/media/food.png": "/static/media/food.d4f51796ee8b9b966919.png",
+    "static/media/cake.png": "/static/media/cake.3c8c9946e7e966f798d6.png",
+    "static/media/customer-service.png": "/static/media/customer-service.a585a0163c38c5081e51.png",
+    "static/media/fast-delivery.png": "/static/media/fast-delivery.d471db0d85cbcc89c3d4.png",
+    "static/media/safe-delivery.png": "/static/media/safe-delivery.b29e57de39ce86ccac97.png",
+    "static/media/spinner.svg": "/static/media/spinner.9d476454d7d4cb20ecfaa6e4ab7b6dfe.svg",
+    "index.html": "/index.html",
+    "main.13302a58.css.map": "/static/css/main.13302a58.css.map",
+    "main.c799ed5e.js.map": "/static/js/main.c799ed5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13302a58.css",
+    "static/js/main.c799ed5e.js"
+  ]
+}
